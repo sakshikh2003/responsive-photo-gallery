@@ -1,0 +1,93 @@
+*{
+   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    height: 8vh;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 1rem;
+}
+.head p{
+    padding-bottom: 10px;
+}
+.head h2{
+    padding-bottom: 5px;
+}
+.product-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.item{
+     background: #fff;
+    border: 0.15rem solid rgba(135, 133, 133, 0.772);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+h5{
+    padding-top: 5px;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+img{
+ width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.foot{
+    height: 5vh;
+    width: 100%;
+    border-top: 0.10rem solid rgba(135, 133, 133, 0.377);
+    color: rgb(107, 104, 104);
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+img{
+    display: inline;
+    object-fit: cover;
+    height: auto;
+}
+.product-card{
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1.2rem;
+    gap: 0.8rem;
+}
+}
+
+@media (min-width:1024px){
+    .product-card{
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+        gap: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
